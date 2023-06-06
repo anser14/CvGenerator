@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="/code/style.css" />
+  </head>
+  <body>
+    <div id="inputarea">
+      <div class="body1">
+        <h1 class="title" id="titl">ONLINE CV GENERATOR</h1>
+      </div>
+      <hr />
+      <div class="box">
+        <div class="left">
+          <div class="pinfo">Personal Info.</div>
+          <label for="photo" class="labl">Upload Your Photo</label>
+          <input type="file"  name="photo"  id="photo">
+          <label for="name" class="labl">Your Full Name</label>
+          <input type="text" class="inpt" id="name" placeholder="Muhammad Adil" />
+          <label for="fname" class="labl">Your Father Name</label>
+          <input
+            type="text"
+            class="inpt"
+            id="fname"
+            placeholder="Abdul Hameed"
+          />
+          <label for="gender" class="labl">Your Gender</label>
+          <input type="text" class="inpt" id="gender" placeholder="Male" />
+          <label for="country" class="labl">Your Nationality</label>
+          <input
+            type="text"
+            class="inpt"
+            id="country"
+            placeholder="Pakistani"
+          />
+          <label for="phone" class="labl">Your Phone</label>
+          <input
+            type="text"
+            class="inpt"
+            id="phnumber"
+            placeholder="+123456789"
+          />
+          <label for="mail" class="labl">Your E-mail</label>
+          <input
+            type="email"
+            class="inpt"
+            id="e-mail"
+            placeholder="abc@mail.com"
+          />
+          <label for="Status" class="labl">Your Martial Status</label>
+          <input type="text" class="inpt" id="status" placeholder="Single" />
+          <label for="cnic" class="labl">Your Cnic</label>
+          <input
+            type="text"
+            class="inpt"
+            id="cnic"
+            placeholder="12303-1234343-9"
+          />
+          <label for="dob" class="labl">Your Date of Birth</label>
+          <input type="date" class="inpt" id="dob" placeholder="12/09/1999" />
+          <label for="address" class="labl">Your Full Address</label>
+          <textarea
+            name="address"
+            id="addr"
+            class="addr"
+            rows="10"
+            placeholder="Shamsabad Colony Near Puldatt DGK"
+          ></textarea>
+          <div class="lang">Languages</div>
+          <h2 class="lan">Languages You Are Fluent In</h2>
+          <div class="one" id="one1">
+            <input type="text" class="inpt" id="language1" placeholder="English"/>
+            <input type="text" class="inpt" id="language2" placeholder="Urdu"/>
+            <input type="text" class="inpt" id="language3" placeholder="Punjabi"/>
+            <!-- <div class="bt">
+              <input
+                type="button"
+                value="Add New"
+                class="add"
+                id="addlang"
+                onclick="addlang()"
+              />
+            </div> -->
+          </div>
+          <div class="hobby">Hobbies</div>
+          <h2 class="hob">Your Hobbies Below</h2>
+
+          <div class="hobb" id="hobb">
+            <input type="text" class="inpt" id="hobby1" placeholder="Cricket" />
+            <input type="text" class="inpt" id="hobby2" placeholder="Coding" />
+            <input type="text" class="inpt" id="hobby3" placeholder="Riding" />
+            <input type="text" class="inpt" id="hobby4" placeholder="Problem Solving" />
+            <!-- <div class="butt">
+              <input
+                type="button"
+                value="Add New"
+                class="add"
+                id="addhobby"
+                onclick="addhobby()"
+              />
+            </div> -->
+          </div>
+        </div>
+
+        <div class="right" id="right1">
+          <div class="pinfo">Objective</div>
+
+          <textarea
+            name="address"
+            id="objin"
+            class="obj"
+            rows="10"
+            placeholder="Your Objective Here"
+          ></textarea>
+
+          <div class="pinfo">Qualification</div>
+          <div class="qualification" id="qdiv">
+            <div id="qualifi">
+              <p class="labl">Education With Year</p>
+              <div class="inputq">
+              <input
+                type="text"
+                class="inpt inptq"
+                id="qualif"
+                placeholder="Matric From lahore in 2020"
+              />
+            </div>
+            </div>
+            <div class="qualifybtn" id="qbtn">
+              <input
+                type="button"
+                value="Add New"
+                class="add"
+                id="addqual"
+                onclick="addqualify()"
+              />
+            </div>
+          </div>
+          <div class="pinfo">Skills</div>
+          <div id="skil">
+            <div id="skills_exp">
+              <p class="labl">Skill With Experience</p>
+              <input
+                type="text"
+                class="inpt inpts"
+                id="Skills"
+                placeholder="Web Developer 3 Years exp."
+              />
+            </div>
+            <div id="skilbtn">
+              <input
+                type="button"
+                value="Add New"
+                class="add"
+                id="addskills"
+                onclick="addskill()"
+              />
+            </div>
+          </div>
+          <div class="pinfo">Other Certificates</div>
+          <div id="certdiv">
+            <div id="cert">
+              <p class="labl">Certificate With Organization Name</p>
+              <input
+                type="text"
+                class="inpt inptc"
+                id="certificates"
+                placeholder="MS Office from AS_Tech"
+              />
+            </div>
+            <div id="certbtn">
+              <input
+                type="button"
+                value="Add New"
+                class="add"
+                id="addcert"
+                onclick="addcert()"
+              />
+            </div>
+          </div>
+          <div class="pinfo">Refrence</div>
+          <input
+            type="text"
+            class="inpt"
+            id="ref"
+            placeholder="Refrence Shall be Provided on Demand"
+          />
+        </div>
+      </div>
+      <input type="button" value="Generate My CV" class="generate" id="gcv" onclick="generatemycv()" />
+    </div>
+
+
+
+    <!-- template -->
+
+
+
+    <div id="template" class="templ">
+      <page size="A4" id="Templatecv">
+        <div class="paper">
+          <div class="left1">
+            <img src="/img/pf.png" class="pic" id="pic" alt="profile">
+            <!-- <div class="pic" id="pic"></div> -->
+            <div class="obj1" id="objective">
+              <h1 class="objective">OBJECTIVE</h1>
+              <div class="txtobj" id="txtobj">
+                <p  class="txtobj1" id="objtxt">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Corrupti ipsa totam laborum laudantium. Animi repellat cum
+                  quisquam? Labore dolores, numquam culpa obcaecati, omnis
+                  provident sint voluptate commodi optio, explicabo eum?
+                </p>
+              </div>
+            </div>
+            <h1 class="personalinfo">Personal Info</h1>
+            <div class="personal" id="personal">
+              <div class="infoleft">
+                <label class="infolabel">Father Name   :</label><br />
+                <label class="infolabel">Date of Birth :</label><br />
+                <label class="infolabel">Martial Status:</label><br />
+                <label class="infolabel">Nationality   :</label><br />
+                <label class="infolabel">Gender        :</label><br />
+                <label class="infolabel">CNIC          :</label><br />
+              </div>
+              <div class="inforight">
+                <label class="infolabel" id="fnamein"
+                  >Allah Bachaya</label
+                ><br />
+                <label class="infolabel" id="dobin"
+                  >15/08/2001</label
+                ><br />
+                <label class="infolabel" id="statusin"
+                  >single</label
+                ><br />
+                <label class="infolabel" id="countryin"
+                  >pakistani</label
+                ><br />
+                <label class="infolabel" id="genderin">Male</label
+                ><br />
+                <label class="infolabel" id="cnicin"
+                  >32102-03231099-1</label
+                ><br />
+              </div>
+            </div>
+            <h1 class="hobbies">HOBBIES</h1>
+            <div class="hobbiest">
+              <label class="hobbiesarea" id="hob1">Cricket</label>
+              <label class="hobbiesarea" id="hob2">Footbal</label>
+              <label class="hobbiesarea" id="hob3">Reading</label>
+              <label class="hobbiesarea" id="hob4">Coding</label>
+             
+            </div>
+            <h1 class="languaget">LANGUAGES</h1>
+            <div class="langt">
+              <label class="languagesarea" id="l1">English</label>
+              <label class="languagesarea" id="l2">Urdu</label>
+              <label class="languagesarea" id="l3">Saraiki</label>
+            </div>
+          </div>
+          <div class="right1">
+            <div class="intro">
+              <h1 class="name" id="tname">Anser Ali</h1>
+              <div class="infocontent">
+                <div class="call">
+                  <img
+                    src="/img/phone.png"
+                    alt="phone_logo"
+                    class="phone"
+                  /><span id="unumber">923247085009</span>
+                </div>
+                <div class="email">
+                  <img
+                    src="/img/Gmail-logo.png"
+                    alt="mail_logo"
+                    class="mail"
+                  /><span id="umail">khananser338@gmail.com</span>
+                </div>
+              </div>
+              <div class="adrre">
+                <img
+                  src="/img/location.png"
+                  alt="location_logo"
+                  class="adr"
+                /><span id="uaddress"
+                  >Shamsabad Colony Near Puldatt Dera Ghazi Khan</span
+                >
+              </div>
+              <br />
+              <div class="line">
+                <hr class="hr" />
+              </div>
+            </div>
+            <h1 class="qualt">QUALIFICATION</h1>
+            <div class="qualificationt" id="qualin">
+              <ul id="qualifin">
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+              </ul>
+            </div>
+
+            <h1 class="skillt">SKILLS</h1>
+            <div class="skillst" id="skilin">
+              <ul id="skillsin">
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+              </ul>
+            </div>
+            <h1 class="certt">CERTIFICATES</h1>
+            <div class="certtt" id="certin">
+              <ul id="certiin">
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+                <li>Lorem ipsum dolor sit amet consectetur,</li>
+              </ul>
+            </div>
+            <h1 class="reft">REFRENCE</h1>
+            <p class="reftt" id="refin">Shall be Provided on Demand.</p>
+          </div>
+        </div>
+      </page>
+      <input
+        type="button"
+        value="Download Now/Print Now"
+        class="generate"
+        id="dncv"
+        onclick="printcv()"
+      />
+    </div>
+    <script src="/code/script.js"></script>
+  </body>
+</html>
